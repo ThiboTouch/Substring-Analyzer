@@ -2,9 +2,10 @@
 
 using LongestUniqueSubstring;
 
+Solution sol = new Solution();
+
 for (int i = 0; i < args.Length; i++)
 {
-    Solution sol = new Solution();
     string str = args[i];
 
     int longest = sol.LengthOfLongestSubstring(str);
