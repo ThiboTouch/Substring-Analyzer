@@ -1,20 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.ComponentModel.DataAnnotations;
-
-if (args.Length == 0)
-{
-    Console.WriteLine("No arguments were provided");
-}
-
 for (int i = 0; i < args.Length; i++)
 {
     string str = args[i];
-    if (string.IsNullOrWhiteSpace(str))
-    {
-        Console.WriteLine("<empty string>");
-        return;
-    }
 
     HashSet<char> set = new HashSet<char>();
     int longest = 0;
